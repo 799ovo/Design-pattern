@@ -18,5 +18,14 @@
     <ClCompile Include="单例模式.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="简单工厂模式.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="工厂方法模式.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="抽象工厂模式.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

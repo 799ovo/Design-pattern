@@ -125,7 +125,7 @@ int main()
 }
 //因为静态初始化在程序开始时，也就是进入主函数之前，由主线程以单线程方式完成了初始化，
 //所以静态初始化实例保证了线程安全性。在性能要求比较高时，就可以使用这种方式，从而避免频繁的加锁和解锁造成的资源浪费。
-#endif
+
 
 //由于上述三种实现，都要考虑到实例的销毁。由此，就出现了第四种实现方式：
 class Singleton
@@ -146,7 +146,7 @@ private:
 	Singleton() { m_Test = 10; };
 	int m_Test;
 };
-int main(int argc, char* argv[])
+int main()
 {
 	Singleton* singletonObj = Singleton::GetInstance();
 	cout << singletonObj->GetTest() << endl;
@@ -154,3 +154,5 @@ int main(int argc, char* argv[])
 	singletonObj = Singleton::GetInstance();
 	cout << singletonObj->GetTest() << endl;
 }
+
+#endif
